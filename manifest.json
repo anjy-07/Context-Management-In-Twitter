@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name":    "Test Extension",
+  "version": "0.0",
+  "offline_enabled": true,
+
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [{
+    "matches":    ["*://*.twitter.com/*"],
+    "js":         ["content.js"],
+    "run_at":     "document_idle",
+    "all_frames": false
+  }],
+
+  "page_action": {
+    "default_title": "Test Extension",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+
+  // No special permissions required...
+  //"permissions": [<all_urls>]
+}

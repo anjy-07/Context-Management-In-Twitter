@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="popup.js"></script>
+    <script type="text/javascript" src="pythonconn.js"></script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+		min-width:600px;
+      }
+      #status {
+        width: 600px;
+      }
+	  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+    </style>
+	
+  </head>
+  <body>
+  
+  <h3 style="font-weight:bold; text-align:center;">User name : <span id="id_python">User</span></h3>
+	<input type="hidden"  id="name">
+	
+	<center>
+    <table cellpadding="3" style="border-collapse:collapse;width:100px;">
+      <tr>
+        <td><input type="button" id="theButton" value = "Perform Followee management" class="btn btn-primary"/></td>
+      </tr>
+    </table>
+	</center>
+	
+ <div id="time" style="font-weight:bold; text-align:center;color:red"></div>
+ <div id="Analysis"></div>
+<div class="container"><div id="followeeList"></div></div>
+
+  </body>
+</html>
