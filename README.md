@@ -1,3 +1,12 @@
+Followee Management: Helping Users Follow the Right Users on Online Social Media
+
+Paper Published in IEEE:- https://ieeexplore.ieee.org/abstract/document/8508517
+
+Conference/Workshop:
+--------------------
+http://cnd.iit.cnr.it/sao2018/sub.html
+
+
 Data Collection
 ---------------
 1. desc.py: Collects ~3k tweets for a given user defined with screen_name. Tweets are stored in data folder as <screen_name>_tweets.csv file
@@ -59,16 +68,7 @@ Bio-Similarity
 
 12. doc2vec_bio_similarity.py takes as input followers' bio text from <screen_name>_follower_name.csv file, uses doc2vec model to compute similarity of given user's bio with the bio of all followers and saves output in Follower_bio_similarity.csv file.
 
-To Do
------
-1. Upload data (tweets, retweet_count, retweets, mention, etc) of all 100 users in data folder
-2. Check latest version of mentions.py file
-3. Code files to generate Fig. 6 and 7
-4. Browser extension code
-5. Correlation code
-6. Dis-similarity and Similarity scores ?
 
 
-Conference/Workshop:
---------------------
-http://cnd.iit.cnr.it/sao2018/sub.html
+
+
